@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calificaciones</title>
+</head>
+<body>
+<h1>Registro de calificaciones</h1>
+<form action="Calificaciones.php" method="post">
+    <label for="usuario">Usuario:</label>
+
+    <input type="text" id="usuario" name="usuario" required><br><br>
+    <label for="ciclo">Ciclo Formativo: </label>>
+
+    <select name="ciclo" id="ciclo" required>
+        <option value="DAW">DAW</option>
+        <option value="SMR">SMR</option>
+    </select> <br><br>
+
+    <label for="modulo"> Módulo:</label>
+    <select name="modulo" id="modulo" required>
+
+        <optgroup label="DAW">
+            <option value="programacion">Programacion</option>
+            <option value="Bases de Datos">Bases de Datos</option>
+            <option value="Sistemas infomaticos">Sistemas Informaticos</option>
+        </optgroup>
+
+        <optgroup label="SMR">
+            <option value="Redes Locales">Redes Locales</option>
+            <option value="Sistemas Operativos">Sistemas Operativos</option>
+            <option value="Aplicaciones Ofimáticas">Aplicaciones Ofimáticas</option>
+        </optgroup>
+    </select> <br><br>
+
+
+    <label for="evaluacion">Evaluación:</label>
+    <select name="evaluacion" id="evaluacion" required>
+        <option value="1ª">1ª Evaluación</option>
+        <option value="2ª">2ª Evaluación</option>
+        <option value="3ª">3ª Evaluación</option>
+    </select><br><br>
+
+
+    <label for="calificacion">Calificación (0 a 10):</label>
+    <input type="number" name="calificacion" id="calificacion" min="0" max="10" step="0.1" required><br><br>
+
+
+    <button type="submit">Guardar Calificación</button>
+</form>
+
+
+</body>
+</html>
